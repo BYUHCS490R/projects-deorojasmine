@@ -9,11 +9,24 @@ header {
     border-width: 5px;
     margin: 100px;
 }
+nav {
+    border: thin solid black;
+    padding-top: 50px;
+    padding-right: 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+main p {
+    border: thin dotted green;
+    padding: 5px 10px 20px 50px;
+}
 header h1 {
     background-color: blue;
 }
 main h1 {
-    border: thin dashed blue
+    border: thin dashed blue;
+    width: 50%;
+    overflow: hidden;
 }
 nav {
     border: solid;
