@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 300px; /* move content below our navigation */
+}
+
+.temple {
+    border: thin solid black;
+    width: 300px;
+}
+
+.temple img {
+    width: 100%;
+}
+
+.floater {
+    float: left;
+}
+
+.hammer {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    margin: 0;
+    z-index: -1;
+}
+/*
+.hammer {
+    position: relative;
+    bottom: 20px;
+    left: -300px;
+}
+*/
+
+.clear {
+    clear: both;
+}
