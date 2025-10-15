@@ -1,6 +1,7 @@
 body{
   margin:0;
   background:#efe7da;
+  background-image: url("border.jpg");
   color:#222;
   font-family: Arial, Helvetica, sans-serif;         
   line-height:1.6;                                    
