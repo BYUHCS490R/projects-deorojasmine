@@ -1,6 +1,17 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
+
+nav a {
+    display: block;
+    background-color: deepskyblue;
+    padding: 10px;
+    color: azure;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 .card {
     border: thin solid black;
     margin: 5px;
