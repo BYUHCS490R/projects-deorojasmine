@@ -8,11 +8,11 @@ body {
   height: 100%;
 }
 
-.site {
+/* /* .site {
   max-width: 1180px;
   margin: 0 auto;
   padding: 1rem clamp(.75rem, 2vw, 1.5rem);
-}
+} */
 
 .site-header {
   background: linear-gradient(180deg, #254b4f, #2b6368); 
@@ -90,6 +90,7 @@ body {
 
 .main {
   width: 100%;
+  display: flex;
 }
 
 .cards {
