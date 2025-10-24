@@ -1,0 +1,48 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px ;
+}
+
+main {
+    display: flex;
+}
+
+.main-row {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.card{
+    border: thin solid #00000037;
+    box-shadow: 3px 3px 5px rgba(200, 200, 200, 0.6);
+    width: 50%;
+}
+.card img {
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(100, 100, 231);
+}
+.nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(100, 100, 231);
+    color: white;
+}
+.nav a:hover {
+    background-color:white;
+    color: rgb(100, 100, 231)
+}
