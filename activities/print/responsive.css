@@ -1,26 +1,39 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 10px;
-    padding: 10px ;
+}
+header {
+    background-color: rgb(5, 111, 99);
+}
+.sidebar h3 {
+    margin: 0;
 }
 
-main {
-    display: flex;
+main h2 {
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
 }
 
 .main-row {
     display: flex;
+    width: 100%;
 }
 
 .sidebar {
     width: 200px;
+    background-color: bisque;
 }
 
 .card{
     border: thin solid #00000037;
     box-shadow: 3px 3px 5px rgba(200, 200, 200, 0.6);
-    width: 50%;
+    width: 200px;
+    margin: 5px;
 }
+
 .card img {
     width: 100%;
 }
@@ -28,6 +41,7 @@ main {
 .row{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;    
 }
 
 .nav {
@@ -45,4 +59,23 @@ main {
 .nav a:hover {
     background-color:white;
     color: rgb(100, 100, 231)
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(100, 100, 231);
+}
+@media ONLY screen AND (max-width: 400px) {
+    body {
+        background-color: lightgray;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .sidebar {
+        display: none;
+    }
+    .main-row {
+        flex-direction: column-reverse;
+    }
 }
