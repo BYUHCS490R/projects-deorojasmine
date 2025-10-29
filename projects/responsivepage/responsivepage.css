@@ -1,16 +1,202 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  margin: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #3a2e24;                
+  background-color: #f8f4ef;     
 }
+
+
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #8b5e3c;     
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
 }
-h1 {
-    margin: 0;
-    font-size: 2.5em;
+
+header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8em;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #c49a6c;     
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: white;
+  color: #8b5e3c;                
+}
+
+
+.main-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+
+.sidebar {
+  flex: 0 0 25%;
+  background-color: #f6ecdb;     
+  border: 1px solid #e5d5c2;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3em;
+  color: #5b3a23;                
+}
+
+.sidebar figure {
+  margin: 0;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sidebar figcaption {
+  font-size: 0.9rem;
+  color: #4d3b2a;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.sidebar ul {
+  margin: 8px 0 0 18px;
+  line-height: 1.5;
+}
+
+
+main {
+  flex: 1;
+}
+
+main h2 {
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #5b3a23;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.card {
+  background-color: white;
+  width: 31%;
+  min-width: 260px;
+  border: 1px solid #e5d5c2;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card figcaption {
+  font-size: 0.9rem;
+  color: #5b4a3a;
+  margin-top: 4px;
+}
+
+.card h3 {
+  margin: 8px 0 4px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #5b3a23;
+}
+
+.card p {
+  margin: 0 0 10px 0;
+  line-height: 1.45;
+}
+
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #a86c3c;     
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.card a:hover {
+  background-color: #8b5e3c;     
+}
+
+
+footer {
+  margin-top: 16px;
+  padding: 12px;
+  text-align: center;
+  color: #4d3b2a;
+  font-size: 0.95em;
+  border-top: 1px solid #e5d5c2;
+}
+
+
+@media only screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main-row {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    main {
+        order: 1;
+    }
 }

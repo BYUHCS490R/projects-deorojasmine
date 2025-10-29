@@ -1,0 +1,45 @@
+body{
+  font-family: "Times New Roman", Times, serif;
+  margin: 12px;
+  color: #000;
+}
+
+nav{ display: none !important; }   
+
+header h1{ margin: 0 0 8px 0; }
+
+.main-row{
+  display: block;                 
+}
+
+.sidebar{
+  margin: 0 0 12px 0;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.sidebar img{ width: 100%; height: auto; }
+
+.row{
+  display: block;
+}
+
+.card{
+  page-break-inside: avoid;
+  border: 1px solid #bbb;
+  box-shadow: none;
+  margin: 0 0 12px 0;
+  padding: 8px;
+  width: 100%;
+}
+.card img{ width: 100%; height: auto; }
+
+footer{
+  border-top: 1px solid #aaa;
+  margin-top: 12px;
+  padding-top: 8px;
+  font-size: 0.95rem;
+}
+@media print{
+  h1,h2,h3{ font-family:"Merriweather", Georgia, "Times New Roman", serif; }
+  body{ font-family:"Nunito Sans","Times New Roman", Times, serif; }
+}

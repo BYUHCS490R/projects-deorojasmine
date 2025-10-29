@@ -1,34 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Family - Responsive Page</title>
-    <link rel="stylesheet" href="responsivepage.css">
-    <link rel="stylesheet" href="print.css" media="print">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Croods Family - Responsive Page</title>
+  <link rel="stylesheet" href="responsivepage.css" media="screen" />
+  <link rel="stylesheet" href="print.css" media="print" />
 </head>
 <body>
-    <header>
-        <h1>Responsive Page</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#family">Family</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-        </ul>
-    </nav>
+  <header>
+    <h1>The Croods - Responsive Page</h1>
+  </header>
+
+  <nav aria-label="Main">
+    <a href="#">Home</a>
+    <a href="#">Family</a>
+    <a href="#">Stories</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
+<div class="main-row">
+    
+    <aside class="sidebar">
+      <h2>About the Clan</h2>
+
+      <figure>
+       
+        <img src="thecroods.jpeg" alt="The Croods family huddled together" />
+        <figcaption>“Always be together.” - Grug</figcaption>
+      </figure>
+
+      <h3>Quick Facts</h3>
+      <ul>
+        <li>Live in a cave until they discover “Tomorrow.”</li>
+        <li>Grug believes in safety; Eep believes in exploring.</li>
+        <li>Guy introduces inventions like shoes and the idea of tomorrow.</li>
+        <li>Thunk narrates everything loudly (and adorably).</li>
+        <li>Gran is tougher than a saber-tooth.</li>
+      </ul>
+    </aside>
+
+    
     <main>
-        <section>
-            <h2>My Family</h2>
-            <p>This is a brief description of my family.</p>
-            <img src="family_photo.jpg" alt="Family Photo" style="width:100%;max-width:600px;">
-        </section>
+      <h2>Family News</h2>
+
+      <div class="row">
+        
+        <article class="card">
+          <figure>
+            <img src="eep.jpeg" alt="Eep looking over a bright canyon" />
+            <figcaption>Eep scouts a new path.</figcaption>
+          </figure>
+          <h3>Eep's Sunrise Route</h3>
+          <p>
+            Eep mapped a safe morning trail that reaches the high ridge before the heat.
+            She tested the path twice and marked shade stops with stacked shells.
+            The family voted to use the route on gathering days because it shortens the
+            climb and avoids the sleepy croc-birds near the river.
+          </p>
+          <a href="#">Read more</a>
+        </article>
+
+        
+        <article class="card">
+          <figure>
+            <img src="grug.jpeg" alt="Grug building a simple canopy" />
+            <figcaption>Grug's “sun-wall” prototype.</figcaption>
+          </figure>
+          <h3>Grug Builds a Sun-Wall</h3>
+          <p>
+            After a hot week, Grug tied woven leaves between two tall roots to make a
+            shade screen for the resting spot. It held through afternoon wind and kept
+            the food pile cool. Guy is sketching a lighter version so the screen can be
+            rolled and carried on trips.
+          </p>
+          <a href="#">Read more</a>
+        </article>
+
+        <article class="card">
+        <figure>
+            <img src="newland.jpeg" alt="The Croods standing on a cliff overlooking a bright valley" />
+            <figcaption>A new world awaits beyond the cave.</figcaption>
+        </figure>
+        <h3>Discovering New Land</h3>
+        <p>
+            After days of wandering through narrow canyons, the Croods reached the edge of a vast valley filled with
+            sunlight, tall trees, and strange colorful plants. For a long moment, they stood together in silence,
+            watching birds glide across the open sky. Grug held back tears of pride while Eep and Guy planned how
+            to explore safely. The family agreed to call the place “Tomorrow,” a name that reminded them how courage
+            and hope can lead to new beginnings.
+        </p>
+        <a href="#">Read more</a>
+        </article>
+      </div>
     </main>
-    <footer>
-        <p>&copy; 2025 Jasmine Rio De Oro</p>
-    </footer>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jasmine Rio De Oro. The photos used are from the internet and for educational purpose only.</p>
+  </footer>
 </body>
 </html>
