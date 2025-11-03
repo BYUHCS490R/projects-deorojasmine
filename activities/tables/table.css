@@ -18,6 +18,9 @@ body {
     margin: auto;
     background-color: pink;
 }
+.schedule tbody tr:nth-child(2) {
+    background-color: rgb(175, 175, 175);
+}
 .num {
     vertical-align: middle;
 }
