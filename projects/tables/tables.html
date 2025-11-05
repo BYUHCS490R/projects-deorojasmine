@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accounting Club — Event Budget (Tables Project)</title>
+  <link rel="stylesheet" href="tables.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>De Oro's Web Design Site</h1>
+    <p class="tagline">Project — Tables</p>
+  </header>
+
+  <nav aria-label="Primary">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a aria-current="page" href="#">Tables</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="layout">
+    <main id="main" role="main">
+      <h2>Professional Accounting Club — Fall 2025 Event Budget</h2>
+
+      
+      <div class="table-wrap">
+        <table class="data-table" aria-describedby="about-table">
+          <caption>Projected attendance and budgets for five club activities</caption>
+
+          
+          <colgroup>
+            <col span="3">
+            <col style="width:10rem">
+            <col style="width:8rem">
+            <col>
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th scope="col">Event</th>
+              <th scope="col">Date</th>
+              <th scope="col">Location</th>
+              <th scope="col">Estimated Attendees</th>
+              <th scope="col">Budget (USD)</th>
+              <th scope="col">Lead</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Opening Social</td>
+              <td>Sep 06</td>
+              <td>HGB 135</td>
+              <td>75</td>
+              <td>$350</td>
+              <td>M. Garcia</td>
+            </tr>
+            <tr>
+              <td>Resume &amp; LinkedIn Workshop</td>
+              <td>Sep 20</td>
+              <td>HGB 275</td>
+              <td>50</td>
+              <td>$120</td>
+              <td>J. Aboc</td>
+            </tr>
+            <tr>
+              <td>CPA Pathways Panel</td>
+              <td>Oct 04</td>
+              <td>Stake Pavilion</td>
+              <td>90</td>
+              <td>$425</td>
+              <td>M. Taito</td>
+            </tr>
+            <tr>
+              <td>Excel &amp; Power BI Lab</td>
+              <td>Oct 18</td>
+              <td>GCB Lab 210</td>
+              <td>40</td>
+              <td>$160</td>
+              <td>Z. Javaluyas</td>
+            </tr>
+            <tr>
+              <td>Service Day + Networking</td>
+              <td>Nov 08</td>
+              <td>HGB 119</td>
+              <td>60</td>
+              <td>$260</td>
+              <td>J. De Oro</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="4" id="totals-label">Totals</th>
+              <td headers="totals-label"><strong>$1,315</strong></td>
+              <td>—</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+
+    <aside>
+      <h2>About This Table</h2>
+      <p id="about-table">
+        This page presents sample Accounting Club events with dates, estimated attendance,
+        and budgets to practice table markup and CSS-only styling (header contrast, zebra rows, and a right sidebar built with Flexbox).
+      </p>
+      <p>Budgets are illustrative only; final amounts are approved by PAS officers and SLS.</p>
+    </aside>
+  </div>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Jasmine Rio De Oro</p>
+  </footer>
+</body>
+</html>
