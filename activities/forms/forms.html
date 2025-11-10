@@ -13,23 +13,60 @@
     <main>
         <h1>Forms</h1>
         <form action="formprocess.html" method="get">
-            <div>First Name: <input type="text" name="fname">
+            <fieldset>
+            <legend>Sign Up</legend>
+            <div class="form-row">
+                <label for="fname"> Full Name: </label>
+                <input type="text" name="fullname" placeholder="Full Name" id="fname">
             </div>
-            <div>Last Name: <input type="text" name="lname">
+            <div class="form-row">
+                <label for="fname"> Email: </label>
+                <input type="email" name="fullname" value="your@email.com" id="fa">
             </div>
-            <input type="submit" value="Sign Up">
+            <div class="form-row">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass">
+            </div>
+            <div class="form-row">
+                <label for="State">State:</label>
+                <select name="State" id="statw">
+                    <option value="blank">- - -</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                    <option value="TX">Texas</option>
+                </select>
+            </div>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" value="TRUE"> I agree to the terms and condition</label>
+                
+            </div>
+            <div class="check-row">
+                <div class="spacer">Gender</div>
+                <label> <input type="radio" name="gender" value="male">Male</label>
+                <label> <input type="radio" name="gender" value="female">Female</label>
+                <label> <input type="radio" name="gender" value="nopreference">Prefer Not to Say</label>
+            </div>
+            <div class="form-row">
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment">Hello
+                </textarea>
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Sign Up">
+            </div>
+        </fieldset>
         </form>
     </main>
-    <p>Engagement Answers Today: November 07, 2025</p>
-    <p>1. The form tag has an "action" attribute. What does it do? The "action" attribute tells the browser where to send the form data when it's submitted.</p> 
-    <p>2. The form tag has a "method" attribute. What does it do? The "method" attribute specifies how the form data will be sent to the server.</p>
-    <p>3. What is the difference between a "POST" and a "GET"? "GET" sends data through the URL (visible), while "POST" sends data securely in the request body (hidden).</p>
- 
+    <p>Engagement Answers Today: November 10, 2025</p>
+    <p>1.What are different ways to style your form? You can style your form using inline styles, internal CSS within a style tag, or an external CSS file; frameworks like Bootstrap or Tailwind can also make styling faster and more consistent. </p>
+    <p>2. How does flex help for both Desktop and Mobile phones? Flex helps make forms responsive by allowing input fields to align side-by-side on desktop and automatically stack vertically on smaller mobile screens for better readability and usability. </p>
     <footer>
         <p>&copy; 2025 Jasmine Rio De Oro</p>
     </footer>
 </body>
 </html>
 
-
-
+`   

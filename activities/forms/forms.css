@@ -1,3 +1,48 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    background-color: azure;
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+.spacer {
+    width: 150px;
+}
+.check-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input:not([type='submit']) {
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    background-color: rgb( 191, 191, 217);
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    background-color: white;
+    color: white;
+    padding: 20px;
+}
+
+@media ONLY screen AND (max-width: 400px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+    .form-row label, .spacer {
+        text-align: left;
+    }
 }
