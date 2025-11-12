@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Oro's Web Design Site — Forms</title>
+  <link rel="stylesheet" href="formprocessing.css" />
+</head>
+<body>
+  <header>
+    <h1>De Oro's Web Design Site</h1>
+    <p class="tagline">Project — Forms (BYUH Accounting Club themed)</p>
+  </header>
+
+  <main>
+    <h1>Accounting Club — Event Sign-Up</h1>
+
+    <form action="formprocess.html" method="get">
+      <fieldset>
+        <legend>Join Our Next Workshop</legend>        
+        <div class="form-row">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fullname" placeholder="First Name" required />
+        <div class="form-row">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="fname" name="fullname" placeholder="Last Name" required />
+        <div class="form-row">
+          <label for="fname">Age:</label>
+          <input type="text" id="fname" name="fullname" placeholder="Age" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@byuh.edu" required />
+        </div>        
+        <div class="form-row">
+          <label for="pass">Password:</label>
+          <input type="password" id="pass" name="pass" required />
+        </div>        
+        <div class="form-row">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="808-555-1234" />
+        </div>      
+        <div class="form-row">
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" name="eventdate" />
+        </div>
+        <div class="form-row">
+          <label for="state">State:</label>
+          <select id="state" name="state">
+            <option value="">— select —</option>
+            <option value="HI" selected>Hawaii</option>
+            <option value="UT">Utah</option>
+            <option value="CA">California</option>
+            <option value="TX">Texas</option>
+          </select>
+        </div>
+        <div class="check-row">
+          <div class="spacer"></div>
+          <label>
+            <input type="checkbox" name="terms" value="yes" required />
+            I agree to the event guidelines
+          </label>
+        </div>
+        <div class="check-row" role="radiogroup" aria-label="Gender">
+          <div class="spacer">Gender</div>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="na" /> Prefer Not to Say</label>
+        </div>
+        <div class="form-row">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Any dietary needs or questions?"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="spacer"></div>
+          <input type="submit" value="Sign Up" />
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jasmine Rio De Oro </p>
+  </footer>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event){
+        event.preventDefault();
+        const first = document.getElementById("firstName").value;
+        const last = document.getElementById("lastName").value;
+        const age = document.getElementById("age").value;
+
+        if (!first || !last) {
+            alert("Please provide your full name.");
+            return
+        }
+        if (!first || !last) {
+            alert("You must be 18 years or older to submit this form");
+            return
+        }
+
+        const data = {
+            firstName: first,
+            lastName: last,
+            age: age
+        }
+
+        console.log(data);
+    });
+  </script>
+</body>
+</html>
