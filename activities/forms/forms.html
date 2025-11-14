@@ -8,65 +8,127 @@
 </head>
 <body>
     <header>
-        De Oro's Web Design Site
+        <h1>De Oro's Web Design Site</h1>
     </header>
+
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="get">
+
+        <form id="myForm" action="formprocess.html" method="get">
             <fieldset>
-            <legend>Sign Up</legend>
-            <div class="form-row">
-                <label for="fname"> Full Name: </label>
-                <input type="text" name="fullname" placeholder="Full Name" id="fname">
-            </div>
-            <div class="form-row">
-                <label for="fname"> Email: </label>
-                <input type="email" name="fullname" value="your@email.com" id="fa">
-            </div>
-            <div class="form-row">
-                <label for="pass">Password:</label>
-                <input type="password" name="pass">
-            </div>
-            <div class="form-row">
-                <label for="State">State:</label>
-                <select name="State" id="statw">
-                    <option value="blank">- - -</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="CA">California</option>
-                    <option value="UT">Utah</option>
-                    <option value="TX">Texas</option>
-                </select>
-            </div>
-            <div class="check-row">
-                <div class="spacer"></div>
-                <label><input type="checkbox" value="TRUE"> I agree to the terms and condition</label>
-                
-            </div>
-            <div class="check-row">
-                <div class="spacer">Gender</div>
-                <label> <input type="radio" name="gender" value="male">Male</label>
-                <label> <input type="radio" name="gender" value="female">Female</label>
-                <label> <input type="radio" name="gender" value="nopreference">Prefer Not to Say</label>
-            </div>
-            <div class="form-row">
-                <label for="comment">Comments</label>
-                <textarea name="comment" id="comment">Hello
-                </textarea>
-            </div>
-            <div class="form-row">
-                <div class="spacer"></div>
-                <input type="submit" value="Sign Up">
-            </div>
-        </fieldset>
+                <legend>Sign Up</legend>
+
+                <div class="form-row">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" value="your@email.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="0" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="">- - -</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="CA">California</option>
+                        <option value="UT">Utah</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" value="TRUE" required>
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer">Gender</div>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="nopreference"> Prefer Not to Say</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment" rows="4">Hello</textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
         </form>
     </main>
-    <p>Engagement Answers Today: November 10, 2025</p>
-    <p>1.What are different ways to style your form? You can style your form using inline styles, internal CSS within a style tag, or an external CSS file; frameworks like Bootstrap or Tailwind can also make styling faster and more consistent. </p>
-    <p>2. How does flex help for both Desktop and Mobile phones? Flex helps make forms responsive by allowing input fields to align side-by-side on desktop and automatically stack vertically on smaller mobile screens for better readability and usability. </p>
+
+    <h2>Engagement : JavaScript Questions &amp; Answers November 14, 2025</h2>
+
+    <h3>1. What is JavaScript? How did it get its name?</h3>
+    <p>JavaScript is a programming language used to make websites interactive. It got its name because it was marketed alongside Java to seem familiar and popular at the time, even though the two are not the same.</p>
+
+    <h3>2. What are the two ways you can run JavaScript?</h3>
+    <p>You can run JavaScript in the browser to control web pages, and you can run it on the server using environments like Node.js. Both methods let you use JS for different parts of an application.</p>
+
+    <h3>3. What was the most popular front-end JS library?</h3>
+    <p>jQuery used to be the most popular front-end JavaScript library. It made it easy to work with the DOM and browser compatibility issues.</p>
+
+    <h3>4. What is the most popular front-end JS library today?</h3>
+    <p>Today, React is the most popular front-end JavaScript library. It is widely used for building dynamic, component-based user interfaces.</p>
+
     <footer>
         <p>&copy; 2025 Jasmine Rio De Oro</p>
     </footer>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            const first = document.getElementById('firstname').value.trim();
+            const last = document.getElementById('lastname').value.trim();
+            const ageValue = document.getElementById('age').value;
+            const age = parseInt(ageValue, 10);
+
+            if (!first || !last) {
+                alert("Please provide your full name (first and last).");
+                event.preventDefault();
+                return;
+            }
+
+            if (isNaN(age) || age < 18) {
+                alert("You must be 18 years or older to submit this form.");
+                event.preventDefault();
+                return;
+            }
+
+            const data = {
+                firstName: first,
+                lastName: last,
+                age: age
+            };
+
+            console.log(data);
+            // If you want to stop it from going to formprocess.html, uncomment the next line:
+            // event.preventDefault();
+        });
+    </script>
 </body>
 </html>
-
-`   
