@@ -1,0 +1,26 @@
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+.schedule {
+    border: 5px solid black;
+    padding: 5px;
+    border-spacing: 5px;
+    margin: auto;
+    border-collapse: separate;
+}
+.schedule th, .schedule td {
+    border: thin solid black;
+    padding: 5px;
+    text-align: left;
+    height: 30px;
+    caption-side: top;
+    width: 80%;
+    margin: auto;
+    background-color: pink;
+}
+.schedule tbody tr:nth-child(2) {
+    background-color: rgb(175, 175, 175);
+}
+.num {
+    vertical-align: middle;
+}
