@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine's Travel Adventures - Contact</title>
+  <link rel="stylesheet" href="finalupdate.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Jasmine's Travel Adventures</h1>
+    <p>Exploring islands, states, and future Europe dreams</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="budget.html">Budget</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Contact Me</h2>
+    <p>
+      If you have questions about my travels, want tips about visiting these places, or simply want to share your own
+      favorite destination, I would love to hear from you. Send me a message below, and I will respond as soon as I can—
+      whether I'm in class, at work, or on another adventure.
+    </p>
+
+    <form id="contactForm">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <div>
+        <label for="from">Where are you from?</label>
+        <input id="from" name="from" type="text" />
+      </div>
+
+      <div>
+        <label for="favorite">Favorite place you've traveled:</label>
+        <input id="favorite" name="favorite" type="text" />
+      </div>
+
+      <div>
+        <label for="message">Message or question:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="formMessage" aria-live="polite"></p>
+  </main>
+
+  <script src="form.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Jasmine Rio De Oro</p>
+  </footer>
+
+</body>
+</html>
